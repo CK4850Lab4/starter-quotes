@@ -1,8 +1,15 @@
-Cody Lin
-Kelly Liu
+## Authors: 
 
-Conventions: allman style
-Modified by Kelly 
+- Cody Lin, A0093265
+- Kelly Liu, A00928089
+
+Conventions: K&R style
+
+## 2016-01-30:
+- Completed Lab 4. Problems we struggled the most with:
+
+* git conflicts took us awhile to resolve
+* callback routing took a long time to figure out 
 
 #######################
 Starter Webapp - Quotes
