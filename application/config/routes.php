@@ -40,12 +40,22 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
-$route['sleep'] = "first/zzz"; // wildcard routing for sleep link
-$route['show/(:num)'] = "first/gimme/$1";//wildcard routing for show link 
-$route['last'] = 'last/welcome';
-$route['lock/(:any)/(:any)'] = "welcome/shucks";
-$route['([a-z][a-z][a-z][a-z])/bingo'] = "bingo"; //expression routing for bingo link
 
+$route['sleep'] = "first/zzz"; // routing for sleep link
+$route['show/(:num)'] = "first/gimme/$1";// wildcard routing for show link 
+$route['last'] = 'last/welcome'; // normal routing for last link
+$route['lock/(:any)/(:any)'] = "welcome/shucks"; // wildcard routing for lockemup link
+$route['([a-z][a-z][a-z][a-z])/bingo'] = "bingo"; // regular expression routing for bingo link
+// callback routing for dunno link
+$route['dunno'] = function() {
+    $source = './data/surprise.jpg'; // an image you provide
+    // set the mime type for that image
+    header("Content-type: image/jpeg"); 
+    header('Content-Disposition: inline');
+    readfile($source); // dish it
+    die(); // and we don't have to go any further
+};
+$route['comp(\d+)/(:any)'] = 'Wise/Bingo'; // regular expression routing for wisdom link
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
