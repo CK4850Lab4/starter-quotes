@@ -8,7 +8,7 @@
  *
  * ------------------------------------------------------------------------
  */
-class Welcome extends Application {
+class Wise extends Application {
 
 	function __construct()
 	{
