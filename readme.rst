@@ -1,11 +1,13 @@
-## Authors: 
+Authors: 
 
 - Cody Lin, A0093265
 - Kelly Liu, A00928089
 
+
 Conventions: K&R style
 
-## 2016-01-30:
+
+2016-01-30:
 - Completed Lab 4. Problems we struggled the most with:
 
 * git conflicts took us awhile to resolve
